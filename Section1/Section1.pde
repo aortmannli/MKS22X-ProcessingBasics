@@ -13,8 +13,8 @@ class Visualizer {
   Visualizer(float x, float y) {
     this.x = x;
     this.y = y;
-    values = new float[10];
-    speeds = new float[10];
+    values = new float[20];
+    speeds = new float[20];
     for (int i = 0; i < values.length; i++) {
       values[i] = random(-99, 99);
       speeds[i] = random(2);
@@ -41,10 +41,10 @@ class Visualizer {
     for(int i = 0; i < values.length; i++){
       if(values[i] > 0){
         fill(100,180,0);
-        rect(x+i*40,y+100, 40, values[i]*-1);
+        rect(x+i*20,y+100, 20, values[i]*-1);
       }else{
         fill(200,60,0);
-        rect(x+i*40,y+100, 40, values[i]*-1);
+        rect(x+i*20,y+100, 20, values[i]*-1);
       }
       
         
